@@ -1,0 +1,36 @@
+{
+  "name": "Instagrab",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.9.3",
+    "@types/chrome": "^0.0.243",
+    "@types/lodash": "^4.14.197",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "events": "^3.1.0",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/lab": "^5.0.0-alpha.140",
+    "@mui/material": "^5.14.5",
+    "client-zip": "^2.4.4",
+    "effector": "^22.8.6",
+    "effector-react": "^22.5.3",
+    "immer": "^10.0.2",
+    "lodash": "^4.17.21",
+    "queue-promise": "^2.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "parcel watch src/manifest.json --host localhost",
+    "restart": "rm -rf .parcel-cache && rm -rf dist && yarn start",
+    "build": "parcel build src/manifest.json"
+  }
+}

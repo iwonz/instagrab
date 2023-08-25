@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Instagraβ",
+  "version": "0.0.1",
+  "background": {
+    "type": "module",
+    "service_worker": "background.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "content.ts"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
